@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import { selectAllUsers } from "../users/usersSlice";
-import { selectAllPosts } from "./postsSlice";
 import React from 'react'
 
 
