@@ -13,6 +13,13 @@ const PostsList = () => {
     const error=useSelector(getPostsError);
     const dispatch = useDispatch();
 
+    useEffect(() => {
+      if(postsStatus == 'idle') {
+        dispatch(fetchPosts())
+      }
+    }, [postsStatus, dispatch])
+    
+
     const renderedPosts = posts.map(post => (
         <article key={post.id}>
             <h3>{post.title}</h3>
