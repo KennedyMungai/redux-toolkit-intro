@@ -6,4 +6,10 @@ const initialState = [
     {id:'2', title: 'Slices ....', content: 'I still have no idea what this imported library does, but I have time'},
 ]
 
-const postsSlice
+const postsSlice = createSlice({
+    name: 'posts',
+    initialState,
+    reducers: {}
+});
+
+export default postsSlice.reducer;
