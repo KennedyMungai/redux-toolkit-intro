@@ -9,6 +9,7 @@ import ReactionButtons from "./ReactionButtons";
 
 const PostsList = () => {
     const posts=useSelector(selectAllPosts);
+    const dispatch = useDispatch();
 
     const renderedPosts = posts.map(post => (
         <article key={post.id}>
