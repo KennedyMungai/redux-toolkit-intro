@@ -9,6 +9,8 @@ import ReactionButtons from "./ReactionButtons";
 
 const PostsList = () => {
     const posts=useSelector(selectAllPosts);
+    const postsStatus=useSelector(getPostsStatus);
+    const error=useSelector(getPostsError);
     const dispatch = useDispatch();
 
     const renderedPosts = posts.map(post => (
