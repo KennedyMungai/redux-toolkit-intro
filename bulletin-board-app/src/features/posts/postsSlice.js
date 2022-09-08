@@ -2,6 +2,8 @@ import { createSlice, nanoid, createAsyncThunk } from "@reduxjs/toolkit";
 import { sub } from 'date-fns';
 
 
+const POSTS_URL='https://jsonplaceholder.typicode.com/posts';
+
 const initialState = {
     posts: [],
     status: 'idle', //idle | loading  | succeeded | failed
