@@ -23,9 +23,13 @@ const AddPostForm = () => {
                     />
 
                 <label htmlFor='postAuthor'>Author:</label>
-                <select id='postAuthor' value={userId} onChange={onAuthorChanged}>
+                <select 
+                    id='postAuthor' 
+                    // value={userId} 
+                    // onChange={onAuthorChanged}
+                    >
                     <option value=''></option>
-                    {usersOptions}
+                    {/* {usersOptions} */}
                 </select>
 
                 <label htmlFor='postContent'>Content:</label>
@@ -38,8 +42,8 @@ const AddPostForm = () => {
 
                 <button
                     type='button'
-                    onClick={onSavePostClicked}
-                    disabled={!canSave}
+                    // onClick={onSavePostClicked}
+                    // disabled={!canSave}
                     >Save Post</button>
             </form>
         </section>
