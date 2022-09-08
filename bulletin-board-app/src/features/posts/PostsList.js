@@ -17,10 +17,7 @@ const PostsList = () => {
       }
     }, [postsStatus, dispatch])
     
-
-    const renderedPosts = posts.map(post => (
-        
-    ))
+    
 
     return (
         <section>
