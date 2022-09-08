@@ -14,7 +14,7 @@ const PostsList = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-      if(postsStatus == 'idle') {
+      if(postsStatus === 'idle') {
         dispatch(fetchPosts())
       }
     }, [postsStatus, dispatch])
