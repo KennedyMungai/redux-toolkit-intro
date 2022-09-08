@@ -34,6 +34,10 @@ const Counter = () => {
                 value={incrementAmount} 
                 onChange={(e) => setIncrementAmount(e.target.value)} />
 
+            <div>
+                <button onClick={() => dispatch(incrementByAmount(addValue))}>Add Amount</button>
+            </div>
+
         </section>
     )
 }
