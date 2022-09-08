@@ -20,7 +20,14 @@ const initialState = [
         id:'2', 
         title: 'Slices ....', 
         content: 'I still have no idea what this imported library does, but I have time',
-        date: sub(new Date(), {minutes: 5}).toISOString
+        date: sub(new Date(), {minutes: 5}).toISOString,
+        reactions: {
+            thumbsUp:0,
+            wow: 0,
+            heart: 0,
+            rocket: 0,
+            coffee:0
+        }
     },
 ]
 
