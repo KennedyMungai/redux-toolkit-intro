@@ -12,7 +12,6 @@ const PostsList = () => {
         </article>
     ))
 
-
     return (
         <section>
             <h2>Posts</h2>
