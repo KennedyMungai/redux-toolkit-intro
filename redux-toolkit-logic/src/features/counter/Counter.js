@@ -23,10 +23,17 @@ const Counter = () => {
     return (
         <section>
             <p>{count}</p>
+
             <div>
                 <button onClick={() => dispatch(increment())}>+</button>
                 <button onClick={() => dispatch(decrement())}>-</button>
             </div>
+
+            <input 
+                type="text" 
+                value={incrementAmount} 
+                onChange={(e) => setIncrementAmount(e.target.value)} />
+
         </section>
     )
 }
