@@ -2,34 +2,11 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 import { sub } from 'date-fns';
 
 
-const initialState = [
-    {
-        id:'1', 
-        title: 'Learning Redux Toolkit', 
-        content: 'I have heard some good things about this course',
-        date: sub(new Date(), {minutes: 10}).toISOString,
-        reactions: {
-            thumbsUp:0,
-            wow: 0,
-            heart: 0,
-            rocket: 0,
-            coffee:0
-        }
-    },
-    {
-        id:'2', 
-        title: 'Slices ....', 
-        content: 'I still have no idea what this imported library does, but I have time',
-        date: sub(new Date(), {minutes: 5}).toISOString,
-        reactions: {
-            thumbsUp:0,
-            wow: 0,
-            heart: 0,
-            rocket: 0,
-            coffee:0
-        }
-    },
-]
+const initialState = {
+    posts: [],
+    status: 'idle',
+    error: null
+}
 
 const postsSlice = createSlice({
     name: 'posts',
