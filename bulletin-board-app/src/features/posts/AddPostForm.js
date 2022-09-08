@@ -14,6 +14,7 @@ const AddPostForm = () => {
 
     const onTitleChanged = e => setTitle(e.target.value);
     const onContentChanged = e => setContent(e.target.value);
+    const onAuthorChanged = e => setUserId(e.target.value);
 
     const onSavePostClicked = () => {
         if(title && content)
@@ -40,15 +41,15 @@ const AddPostForm = () => {
                     onChange={onTitleChanged}
                     />
 
-                {/* <label htmlFor='postAuthor'>Author:</label>
+                <label htmlFor='postAuthor'>Author:</label>
                 <select 
                     id='postAuthor' 
                     value={userId} 
                     onChange={onAuthorChanged}
                     >
                     <option value=''></option>
-                    {usersOptions}
-                </select> */}
+                    {/* {usersOptions} */}
+                </select>
 
                 <label htmlFor='postContent'>Content:</label>
                 <textarea 
