@@ -4,9 +4,11 @@ import { decrement, increment } from './counterSlice';
 
 
 const Counter = () => {
-  return (
-    <div>Counter</div>
-  )
+    const count = useSelector((state) => state.counter.count);
+
+    return (
+        <div>Counter</div>
+    )
 }
 
 export default Counter
