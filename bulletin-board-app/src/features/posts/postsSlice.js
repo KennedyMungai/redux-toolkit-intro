@@ -7,7 +7,14 @@ const initialState = [
         id:'1', 
         title: 'Learning Redux Toolkit', 
         content: 'I have heard some good things about this course',
-        date: sub(new Date(), {minutes: 10}).toISOString
+        date: sub(new Date(), {minutes: 10}).toISOString,
+        reactions: {
+            thumbsUp:0,
+            wow: 0,
+            heart: 0,
+            rocket: 0,
+            coffee:0
+        }
     },
     {
         id:'2', 
