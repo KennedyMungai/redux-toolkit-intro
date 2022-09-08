@@ -8,6 +8,7 @@ import { postAdded } from './postsSlice';
 const AddPostForm = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
+    const [userId, setUserId] = useState('');
     const dispatch = useDispatch();
 
     const onTitleChanged = e => setTitle(e.target.value);
