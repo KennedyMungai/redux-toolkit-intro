@@ -13,7 +13,7 @@ const initialState = [
         id:'2', 
         title: 'Slices ....', 
         content: 'I still have no idea what this imported library does, but I have time',
-        date: sub(new Date(), {minutes: 10}).toISOString
+        date: sub(new Date(), {minutes: 5}).toISOString
     },
 ]
 
