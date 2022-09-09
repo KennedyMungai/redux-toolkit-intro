@@ -16,6 +16,7 @@ function App() {
         <Route path='post'>
           <Route index element={<AddPostForm />} />
           <Route path=":postId" element={<SinglePostPage />} />
+          <Route path="edit/:postId" element={<EditPostForm />} />
         </Route>
       </Route>
     </Routes>
