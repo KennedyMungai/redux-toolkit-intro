@@ -9,10 +9,15 @@ import SinglePostPage from './features/posts/SinglePostPage';
 
 function App() {
   return (
-    <main className="App">
-      <AddPostForm />
-      <PostsList />
-    </main>
+    <Routes>
+      <Route path='/' element={<Layout />}>
+        <Route index element={<PostsList />} />
+        <Route path='post'>
+          <Route index element={<AddPostForm />} />
+          <Route path=":postId" element={<SinglePostPage />} />
+        </Route>
+      </Route>
+    </Routes>
   );
 }
 
