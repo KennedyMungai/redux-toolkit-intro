@@ -36,4 +36,4 @@ const PostsList = () => {
     )
 };
 
-export default PostsList
+export default PostsList;
