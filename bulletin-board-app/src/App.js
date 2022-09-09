@@ -24,6 +24,9 @@ function App() {
           <Route index element={<UsersList />} />
           <Route path=':userId' element={<UserPage />} />
         </Route>
+
+        {/* This is a page to be navigated to incase of a 404 */}
+        <Route path='*' element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
   );
