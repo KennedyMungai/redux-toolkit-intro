@@ -1,6 +1,5 @@
 import { useDispatch } from "react-redux";
 import { reactionAdded } from "./postsSlice";
-import React from 'react';
 
 
 
