@@ -9,6 +9,7 @@ const AddPostForm = () => {
     const [title, setTitle] = useState('');
     const [content, setContent] = useState('');
     const [userId, setUserId] = useState('');
+    const [addRequestStatus, setaddRequestStatus] = useState('');
     const dispatch = useDispatch();
     const users = useSelector(selectAllUsers);
 
