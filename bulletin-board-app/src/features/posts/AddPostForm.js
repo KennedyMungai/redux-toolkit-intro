@@ -29,6 +29,7 @@ const AddPostForm = () => {
                 setTitle('');
                 setContent('');
                 setUserId('');
+                navigate('/');
             } catch (err) {
                 console.error('Failed to save the post', err);
             } finally {
