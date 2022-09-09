@@ -152,5 +152,5 @@ export const getCount = (state) => state.posts.count;
 
 export const selectPostById = (state, postId) => state.post.posts.find(post => post.id === postId);
 
-export const {postAdded, reactionAdded} =  postsSlice.actions;
+export const {increaseCount, reactionAdded} =  postsSlice.actions;
 export default postsSlice.reducer;
