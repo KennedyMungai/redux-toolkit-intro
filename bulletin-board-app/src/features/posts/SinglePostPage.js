@@ -3,7 +3,8 @@ import PostAuthor from "./PostAuthor";
 import { selectPostById } from "./postsSlice";
 import ReactionButtons from "./ReactionButtons";
 import TimeAgo from "./TimeAgo";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
+
 
 
 const SinglePostPage = () => {
