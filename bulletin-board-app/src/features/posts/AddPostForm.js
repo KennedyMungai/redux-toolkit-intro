@@ -13,6 +13,7 @@ const AddPostForm = () => {
     const [addRequestStatus, setaddRequestStatus] = useState('');
     const dispatch = useDispatch();
     const users = useSelector(selectAllUsers);
+    const navigate = useNavigate();
 
     const onTitleChanged = e => setTitle(e.target.value);
     const onContentChanged = e => setContent(e.target.value);
