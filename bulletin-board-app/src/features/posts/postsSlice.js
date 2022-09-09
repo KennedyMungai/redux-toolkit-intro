@@ -67,6 +67,10 @@ const postsSlice = createSlice({
             }
         },
 
+        increaseCount(state, action) {
+            state.count = state.count+1;
+        }
+
         extraReducers(builder) {
             builder
                 .addCase(fetchPosts.pending, (state,action) => {
