@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectAllPosts, getPostsError, getPostsStatus } from "./postsSlice";
 import PostsExcerpt from "./PostsExcerpt";
 
