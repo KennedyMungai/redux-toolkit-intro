@@ -3,7 +3,7 @@ import { sub } from 'date-fns';
 import axios from 'axios';
 
 
-const POSTS_URL='https://jsonplaceholder.typicode.com/posts';
+const POSTS_URL="https://jsonplaceholder.typicode.com/posts";
 
 const initialState = {
     posts: [],
