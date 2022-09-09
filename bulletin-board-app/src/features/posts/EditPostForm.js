@@ -47,7 +47,7 @@ const EditPostForm = () => {
         }
     }
 
-    const userOptions = users.map(user => (
+    const usersOptions = users.map(user => (
         <option
             key={user.id}
             value={user.id}
