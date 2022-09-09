@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import React from 'react'
+import React from 'react';
 
 
 const Layout = () => {
@@ -7,7 +7,7 @@ const Layout = () => {
     <main className="App">
         <Outlet />
     </main>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
