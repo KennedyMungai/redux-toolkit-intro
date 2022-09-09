@@ -9,12 +9,6 @@ const PostsList = () => {
     const postsStatus=useSelector(getPostsStatus);
     const error=useSelector(getPostsError);
 
-    useEffect(() => {
-      if(postsStatus === 'idle') {
-        dispatch(fetchPosts())
-      }
-    }, [postsStatus, dispatch])
-    
     let content;
 
     if (postsStatus === 'loading') {
