@@ -1,4 +1,4 @@
-import { createSlice, nanoid, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { sub } from 'date-fns';
 import axios from 'axios';
 
@@ -69,7 +69,7 @@ const postsSlice = createSlice({
 
         increaseCount(state, action) {
             state.count = state.count+1;
-        }
+        },
 
         extraReducers(builder) {
             builder
