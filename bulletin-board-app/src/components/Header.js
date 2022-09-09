@@ -16,6 +16,11 @@ const Header = () => {
                         <li><Link to="post">Post</Link></li>
                         <li><Link to="user">User</Link></li>
                     </ul>
+                    <button
+                        onClick={() => dispatch(increaseCount())}
+                    >
+                        {count}
+                    </button>
                 </nav>
             </header>
     )
