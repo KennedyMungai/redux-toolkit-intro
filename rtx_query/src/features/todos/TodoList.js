@@ -42,7 +42,19 @@ const TodoList = () => {
 
 
     let content;
-    // Define conditional content
+    
+    if(isLoading)
+    {
+        content=<p>Loading...</p>
+    }
+    else if(isSuccess)
+    {
+        content=JSON.stringify(todos);
+    }
+    else if(isError)
+    {
+        content=<p>{error}</p>
+    }
 
     return (
         <main>
