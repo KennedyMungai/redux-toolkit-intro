@@ -1,5 +1,8 @@
 import {
-        useGetTodosQuery
+        useGetTodosQuery,
+        useAddTodoMutation,
+        useDeleteTodoMutation,
+        useUpdateTodoMutation
     } from '../api/apiSlice';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
