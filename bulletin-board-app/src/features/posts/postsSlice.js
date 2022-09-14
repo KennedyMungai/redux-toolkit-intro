@@ -1,4 +1,10 @@
-import { createSlice, createAsyncThunk, createSelector } from "@reduxjs/toolkit";
+import { 
+        createSlice, 
+        createAsyncThunk, 
+        createSelector,
+        createEntityAdapter
+     } from "@reduxjs/toolkit";
+     
 import { sub } from 'date-fns';
 import axios from 'axios';
 
