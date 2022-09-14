@@ -33,5 +33,8 @@ export const apiSlice = createApi({
 });
 
 export const {
-    useGetTodosQuery
+    useGetTodosQuery,
+    useAddTodoMutation,
+    useUpdateTodoMutation,
+    useDeleteTodoMutation
 } = apiSlice;
