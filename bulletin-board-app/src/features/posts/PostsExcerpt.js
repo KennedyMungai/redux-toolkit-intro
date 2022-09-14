@@ -21,4 +21,6 @@ let PostsExcerpt = ({post}) => {
   )
 }
 
+PostsExcerpt = React.memo(PostsExcerpt);
+
 export default PostsExcerpt;
