@@ -105,7 +105,7 @@ const postsSlice = createSlice({
                     });
 
                     //Add any fetched posts to the array
-                    state.posts=state.posts.concat(loadedPosts);
+                    postsAdapter.upsertMany(state, loadedPosts);
                 })
 
                 .addCase(fetchPosts.rejected, (state, action) => {
