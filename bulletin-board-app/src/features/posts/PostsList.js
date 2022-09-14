@@ -5,7 +5,7 @@ import PostsExcerpt from "./PostsExcerpt";
 
 
 const PostsList = () => {
-    const posts=useSelector(selectAllPosts);
+    const orderedPostIds=useSelector(selectPostIds);
     const postsStatus=useSelector(getPostsStatus);
     const error=useSelector(getPostsError);
 
