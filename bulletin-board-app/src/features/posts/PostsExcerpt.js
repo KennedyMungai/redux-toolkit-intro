@@ -6,7 +6,7 @@ import React from "react";
 
 
 
-const PostsExcerpt = ({post}) => {
+let PostsExcerpt = ({post}) => {
   return (
         <article>
             <h2>{post.title}</h2>
