@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectAllPosts, getPostsError, getPostsStatus } from "./postsSlice";
+import { selectPostIds, getPostsError, getPostsStatus } from "./postsSlice";
 import PostsExcerpt from "./PostsExcerpt";
 
 
