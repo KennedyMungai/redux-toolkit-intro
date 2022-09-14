@@ -134,9 +134,7 @@ const postsSlice = createSlice({
                         return;
                     }
 
-                    const {id} = action.payload;
                     action.payload.date = new Date().toISOString();
-                    const posts = state.posts.filter(post => post.id !== id);
                     postsAdapter.upsertOne(state, action.payload);
                 })
 
@@ -147,7 +145,6 @@ const postsSlice = createSlice({
                         return;
                     }
                     const { id } = action.payload;
-                    const posts = state.posts.filter(post => post.Id === id);
                     postsAdapter.removeOne(state, id);
                 })
         }
