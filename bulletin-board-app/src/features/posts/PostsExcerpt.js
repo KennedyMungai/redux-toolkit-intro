@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const PostsExcerpt = ({post}) => {
+const PostsExcerpt = ({postId}) => {
   return (
         <article>
             <h2>{post.title}</h2>
