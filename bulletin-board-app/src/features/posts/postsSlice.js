@@ -15,12 +15,11 @@ const postsAdapter = createEntityAdapter({
     sortComparer: (a, b) => b.date.localeCompare(a.date)
 });
 
-const initialState = {
-    posts: [],
+const initialState = postsAdapter.getInitialState({
     status: 'idle', //idle | loading  | succeeded | failed
     error: null,
     count: 0
-}
+});
 
 export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
     try {
