@@ -151,6 +151,12 @@ const postsSlice = createSlice({
     }
 });
 
+export const {
+    selectAll: selectAllPosts,
+    selectById: selectUserById,
+    selectIds: selectPostIds
+} = postsAdapter.getSelectors(state => state.posts);
+
 export const getPostsStatus = (state) => state.posts.status;
 export const getPostsError = (state) => state.posts.error;
 export const getCount = (state) => state.posts.count;
