@@ -620,12 +620,6 @@
     },
     {
       "userId": 6,
-      "id": 108,
-      "title": "a eos eaque nihil et exercitationem incidunt delectus",
-      "completed": true
-    },
-    {
-      "userId": 6,
       "id": 109,
       "title": "autem temporibus harum quisquam in culpa",
       "completed": true
@@ -1175,12 +1169,6 @@
       "id": 200,
       "title": "ipsam aperiam voluptates qui",
       "completed": false
-    },
-    {
-      "userId": 1,
-      "title": "New todo!",
-      "completed": false,
-      "id": 201
     }
   ]
 }
