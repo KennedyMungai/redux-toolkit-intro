@@ -124,7 +124,7 @@ const postsSlice = createSlice({
                         coffee: 0
                     }
                     console.log(action.payload);
-                    state.posts.push(action.payload);
+                    postsAdapter.addOne(state, action.payload);
                 })
 
                 .addCase(updatePost.fulfilled, (state, action) => {
