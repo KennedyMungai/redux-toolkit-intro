@@ -148,7 +148,7 @@ const postsSlice = createSlice({
                     }
                     const { id } = action.payload;
                     const posts = state.posts.filter(post => post.Id === id);
-                    state.posts = posts;
+                    postsAdapter.removeOne(state, id);
                 })
         }
     }
